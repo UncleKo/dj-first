@@ -1,0 +1,38 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="content-section">
+    <a id="expand-modal" class="btn btn-outline-info btn-sm mt-1 mb-1">画像を挿入</a>
+    <form method="POST">
+      {% csrf_token %}
+      <fieldset class="form-group">
+        <legend class="border-bottm mb-4">
+          {% if edit %}
+            投稿の更新
+          {% else %}
+            投稿
+          {% endif %}
+        </legend>
+        {{ form|crispy }}
+      </fieldset>
+      <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">
+          {% if edit %}
+            更新する
+          {% else %}
+            投稿する
+          {% endif %}
+        </button>
+        {% if edit %}
+          <a class="btn btn-outline-secondary" href=" {% url 'post-detail' post.id %}">
+            キャンセル
+          </a>
+        {% endif %}
+      </div>
+    </form>
+    <section class="modal">
+      <div id="photos">
+      </div> <!-- #photos -->
+    </section> <!-- .modal -->
+  </div> <!-- content-section -->
+{% endblock content %}

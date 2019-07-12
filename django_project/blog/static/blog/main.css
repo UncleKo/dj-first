@@ -1,0 +1,186 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+/* My Own CSS */
+
+.comment-img {
+  height: 26px;
+  width: 26px;
+}
+
+.comment {
+  margin: 50px 0 50px 30px;
+}
+
+/* .comment h6 {
+  display: inline;
+} */
+
+small {
+  margin-right: 5px;
+}
+
+.archive-heading {
+  font-size: 1.6rem;
+  margin: 20px 0 30px;
+}
+
+div.content-section {
+  position: relative;
+}
+
+div.content-section #expand-modal {
+  position: absolute;
+  top: 160px;
+  right: 20px;
+}
+
+div.content-section section.modal.show-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: #333;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content-section section.modal.show-modal #photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.content-section section.modal.show-modal #photos form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+div.content-section section.modal.show-modal #photos form .col-form-label {
+  display: none;
+}
+
+div.content-section section.modal.show-modal #photos div {
+  text-align: center;
+}
+
+div.content-section section.modal.show-modal #photos div ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin: 10px 0;
+}
+
+div.content-section section.modal.show-modal #photos div ul li {
+  list-style: none;
+}
+
+div.content-section section.modal.show-modal #photos div ul li img {
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+ul.image-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.image-list li {
+  margin: 10px 0;
+  flex-basis: 20%;
+}
+
