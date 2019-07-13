@@ -130,7 +130,7 @@ div.content-section section.modal.show-modal {
   height: 100%;
   overflow: scroll;
   background: #333;
-  opacity: 0.8;
+  opacity: 0.9;
   color: white;
   display: flex;
   justify-content: center;
@@ -143,32 +143,27 @@ div.content-section section.modal.show-modal #photos {
   align-items: center;
 }
 
-div.content-section section.modal.show-modal #photos form {
-  text-align: center;
-  margin-top: 50px;
-}
-
-div.content-section section.modal.show-modal #photos form .col-form-label {
-  display: none;
-}
-
 div.content-section section.modal.show-modal #photos div {
   text-align: center;
 }
 
-div.content-section section.modal.show-modal #photos div ul {
+div.content-section section.modal.show-modal #photos div.photo-list {
+  display: none;
+  margin-top: 20px;
+}
+
+div.content-section section.modal.show-modal #photos div.photo-list ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 10px;
   margin: 10px 0;
 }
 
-div.content-section section.modal.show-modal #photos div ul li {
+div.content-section section.modal.show-modal #photos div.photo-list ul li {
   list-style: none;
 }
 
-div.content-section section.modal.show-modal #photos div ul li img {
+div.content-section section.modal.show-modal #photos div.photo-list ul li img {
   cursor: pointer;
   margin: 10px 10px;
 }
@@ -182,5 +177,29 @@ ul.image-list {
 ul.image-list li {
   margin: 10px 0;
   flex-basis: 20%;
+}
+
+.dropzone-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #605e5e;
+  outline: none;
+  transition: border 0.24s ease-in-out;
 }
 

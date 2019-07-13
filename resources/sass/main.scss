@@ -86,6 +86,42 @@ a.article-title:hover {
 
 /* My Own CSS */
 
+// @mixin button-bg($bg) {
+//   background: $bg;
+//   &:hover {
+//     background:darken($bg,8%);
+//     transition: all 0.3s ease;
+//   }
+//   &:active {
+//     background:darken($bg,25%);
+//   } 
+// }
+
+// .btn {
+//  color:white;
+//  text-decoration:none;
+//  padding:5px 10px;
+//  border-radius:3px;
+//  font-family: 'Poiret One', cursive;
+//  font-size:1.1em;
+// }
+
+// .btn-green {
+//    @include button-bg(#2ecc71);
+// }
+
+// .btn-blue {
+//    @include button-bg(#3498db);
+// }
+
+// .btn-yellow{
+//    @include button-bg(#f1c40f);
+// }
+
+// .btn-red {
+//    @include button-bg(#e74c3c);
+// }
+
 .comment-img {
   height: 26px;
   width: 26px;
@@ -123,7 +159,7 @@ div.content-section {
       height: 100%;
       overflow:scroll;
       background: #333;
-      opacity: .8;
+      opacity: .9;
       color: white;
       display: flex;
       justify-content: center;
@@ -132,20 +168,23 @@ div.content-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        form {
-          text-align: center;
-          margin-top: 50px;
-          .col-form-label {
-            display: none;
-          }
-        } //form
+        // form {
+        //   text-align: center;
+        //   margin-top: 50px;
+        //   .col-form-label {
+        //     display: none;
+        //   }
+        // } //form
         div {
           text-align: center;
+        }
+        div.photo-list {
+          display: none;
+          margin-top: 20px;
           ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            margin-top: 10px;
             margin: 10px 0;
             li {
               list-style: none;
@@ -168,4 +207,31 @@ ul.image-list {
     margin: 10px 0;
     flex-basis: 20%;
   }
+}
+
+.dropzone-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropzone {
+  // flex: 1;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  // color: #bdbdbd;
+  color: #605e5e;
+  outline: none;
+  transition: border .24s ease-in-out;
 }
