@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import Dropzone from 'react-dropzone'
 
-class Basic extends Component {
+class MyDropzone extends Component {
 
   constructor() {
     super();
     this.onDrop = (files) => {
-      this.setState({files})
+      // this.setState({files})
       this.setState({ description: files[0].name})
       this.props.dropChange(files[0])
     };
@@ -41,13 +41,13 @@ class Basic extends Component {
   }
 }
 
-export default Basic;
+export default MyDropzone;
 
 
 // import React from 'react';
 // import {useDropzone} from 'react-dropzone';
 
-// function Basic(props) {
+// function MyDropzone(props) {
 //   const {acceptedFiles, getRootProps, getInputProps} = useDropzone({
 //     onDrop:  acceptedFiles => {
 //       document.querySelector('.dropzone p').innerHTML({files})
@@ -74,4 +74,4 @@ export default Basic;
 //   );
 // }
 
-// export default Basic;
+// export default MyDropzone;

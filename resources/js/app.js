@@ -1,9 +1,9 @@
-import {$, $$} from './bling.js';
+import {$, $$} from './components/bling.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PhotoList from './Photo';
+import PhotoInsert from './PhotoInsert';
 
-ReactDOM.render(<PhotoList />, document.getElementById('photos'));
+ReactDOM.render(<PhotoInsert />, document.getElementById('photo_insert'));
 
 (function ($, $$) {
 

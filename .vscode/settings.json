@@ -15,5 +15,6 @@
   ],
   "files.exclude": {
     "**/*.pyc": true
-  }
+  },
+  "html.autoClosingTags": false
 }
