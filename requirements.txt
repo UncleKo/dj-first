@@ -14,7 +14,7 @@ configobj==5.0.6
 cryptography==1.2.3
 defusedxml==0.6.0
 Django==2.2.1
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 Flask==1.0.2
 Flask-Session==0.3.1
 Flask-SocketIO==3.3.2
