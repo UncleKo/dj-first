@@ -13,7 +13,7 @@ command-not-found==0.3
 configobj==5.0.6
 cryptography==1.2.3
 defusedxml==0.6.0
-Django==2.2.1
+Django==2.2.27
 djangorestframework==3.9.4
 Flask==1.0.2
 Flask-Session==0.3.1
